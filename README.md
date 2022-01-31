@@ -6,3 +6,9 @@
 $ npm install
 $ npm run build
 ```
+
+# ディレクトリ構成
++ /build  ... ビルドで生成
++ /inc ... 実装するPHPコード
++ /lib ... 汎用的に使えるクラス群
++ /src ... ブロック毎のJS
