@@ -14,6 +14,6 @@ $ npm run build
 + /src ... ブロック毎のJS
 
 # コーディングの時に気をつけること。
-- コンストラクタに Wordpress関数をかかない。インスタンス化してもWordPressとは接続しない。
+- コンストラクタに Wordpress関数をかかない。インスタンス化してもWordPressとは接続しない。(ユニットテストしやすくなるらしい）
 - `add_filter` や `add_action` などのフックは `register()` というメソッドから呼び出す。
 - グローバル関数は極力使わない。たとえばBlock内からプラグインのバージョンを調べるには、`$this->plugin->get_version();` でいける。
