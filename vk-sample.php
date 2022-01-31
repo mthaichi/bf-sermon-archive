@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Vk Sample
- * Description:       Example block written with ESNext standard and JSX support – build step required.
+ * Description:       社内勉強会サンプル
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
@@ -28,13 +28,14 @@ add_action( 'init', 'create_block_vk_sample_block_init' );
 
 */
 
+// lib/ の中はcomposer化してもいい。
 require_once __DIR__ . '/lib/class-object.php';
 require_once __DIR__ . '/lib/class-block.php';
 require_once __DIR__ . '/lib/class-plugin.php';
 
 
 require_once __DIR__ . '/inc/class-vk-sample-plugin.php';
-require_once __DIR__ . '/inc/class-vk-base-block.php';
+require_once __DIR__ . '/inc/class-vk-sample-block.php';
 require_once __DIR__ . '/inc/class-vk-marquee-block.php';
 
 
