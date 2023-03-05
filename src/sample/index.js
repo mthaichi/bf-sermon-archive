@@ -25,7 +25,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( 'vk-sample-blocks/vk-sample', {
+registerBlockType( 'bf-favorite-patterns/bf-sample', {
 	/**
 	 * @see ./edit.js
 	 */

@@ -1,8 +1,8 @@
 <?php
 
-namespace VKBase;
+namespace BFBase;
 
-abstract class Block extends BaseObject {
+ class Block extends BaseObject {
 
     protected $block_dir;
 

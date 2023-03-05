@@ -1,5 +1,5 @@
 <?php
 
-namespace VKBase;
+namespace BFBase;
 
 Class BaseObject { }

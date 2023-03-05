@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Vk Sample
- * Description:       社内勉強会サンプル
- * Requires at least: 5.8
- * Requires PHP:      7.0
+ * Plugin Name:       BF Favorite Patterns
+ * Description:       BREADFISHで用意したパターンを読み込みます。
+ * Requires at least: 6.1.1
+ * Requires PHP:      7.4
  * Version:           0.1.0
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       vk-sample
+ * Text Domain:       bf-favorite-patterns
  *
- * @package           create-block
+ * @package           bf-favorite-patterns
  */
 
 /**
@@ -32,13 +32,17 @@ add_action( 'init', 'create_block_vk_sample_block_init' );
 require_once __DIR__ . '/lib/class-object.php';
 require_once __DIR__ . '/lib/class-block.php';
 require_once __DIR__ . '/lib/class-plugin.php';
+require_once __DIR__ . '/lib/class-option-page.php';
 
 
-require_once __DIR__ . '/inc/class-vk-sample-plugin.php';
-require_once __DIR__ . '/inc/class-vk-sample-block.php';
-require_once __DIR__ . '/inc/class-vk-marquee-block.php';
+
+require_once __DIR__ . '/inc/class-plugin.php';
+require_once __DIR__ . '/inc/class-sample-block.php';
+require_once __DIR__ . '/inc/class-marquee-block.php';
+require_once __DIR__ . '/inc/class-option-page.php';
 
 
-$plugin = new VK_SamplePlugin(__DIR__);
+
+$plugin = new BF_FavoritePatterns\Plugin(__DIR__);
 $plugin->initialize();
 

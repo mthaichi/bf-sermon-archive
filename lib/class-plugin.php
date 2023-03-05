@@ -1,8 +1,7 @@
 <?php
 
-namespace VKBase;
-
-abstract class Plugin extends BaseObject {
+namespace BFBase;
+class Plugin extends BaseObject {
 
     protected $version;
     protected $base_dir = '';

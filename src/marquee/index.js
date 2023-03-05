@@ -25,7 +25,7 @@
   *
   * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
   */
- registerBlockType( 'vk-sample-blocks/marquee', {
+ registerBlockType( 'bf-favorite-patterns/marquee', {
      /**
       * @see ./edit.js
       */
