@@ -1,0 +1,5 @@
+{
+    "require": {
+        "divengine/div": "^5.1"
+    }
+}
