@@ -3,9 +3,9 @@ namespace BF_FavoritePatterns;
 
 class FavoritePatternManager {
 
-    use \BFBase\Singleton;
+    use \BF_PluginBase\Singleton;
 
-    private $transient_name = 'bf_favorite_patterns_api_data';
+    private $transient_name = 'BF_FavoritePatterns_api_data';
 
     public function activate_actions() {
         add_action( 'load-post.php', array( $this, 'reload_pattern_api_data' ) );

@@ -1,9 +1,9 @@
 <?php
-namespace BF_FavoritePatterns;
+namespace BF_Favorite_Patterns;
 
 class FavoritePatternManager {
 
-    use \BFBase\Singleton;
+    use \BF_Plugin_Base\Singleton;
 
     private $transient_name = 'bf_favorite_patterns_api_data';
 

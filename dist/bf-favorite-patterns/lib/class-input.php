@@ -1,9 +1,9 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 
 
-class Input extends BaseObject {
+class Input extends Object {
 
 	/**
 	 * $_GETの内容をコピーして保持する

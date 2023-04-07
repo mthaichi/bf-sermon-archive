@@ -1,9 +1,9 @@
 <?php 
 
-namespace BF_FavoritePatterns;
+namespace BF_Favorite_Patterns;
 
 class HeaderToolber {
-    use \BFBase\Singleton;
+    use \BF_Plugin_Base\Singleton;
 
     function activate_actions () {
         add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_scripts' ) );       

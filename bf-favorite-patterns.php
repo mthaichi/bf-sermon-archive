@@ -36,22 +36,11 @@ define( 'BFFP_PATH', plugin_dir_path( __FILE__ ) );
 // Define plugin url.
 define( 'BFFP_URL', plugin_dir_url( __FILE__ ) );
 
-require_once __DIR__ . '/lib/trait-singleton.php';
-require_once __DIR__ . '/lib/class-object.php';
-require_once __DIR__ . '/lib/class-block.php';
-require_once __DIR__ . '/lib/class-plugin.php';
-require_once __DIR__ . '/lib/class-option-page.php';
-require_once __DIR__ . '/lib/class-view.php';
-require_once __DIR__ . '/lib/class-input.php';
+require_once 'autoload.php';
 
-require_once __DIR__ . '/inc/function.php';
-require_once __DIR__ . '/inc/class-header-toolbar.php';
-require_once __DIR__ . '/inc/class-plugin.php';
-require_once __DIR__ . '/inc/class-sample-block.php';
-require_once __DIR__ . '/inc/class-marquee-block.php';
-require_once __DIR__ . '/inc/class-option-page.php';
-require_once __DIR__ . '/inc/class-favorite-pattern-manager.php';
+require_once __DIR__ . '/inc/bf-favorite-patterns/functions.php';
 
 $plugin = BF_FavoritePatterns\Plugin::get_instance();
 $plugin->initialize(__DIR__);
+
 

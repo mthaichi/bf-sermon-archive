@@ -1,5 +1,5 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 
-Class BaseObject { }
+Class Object { }

@@ -2,8 +2,8 @@
 
 namespace BF_FavoritePatterns;
 
-class HeaderToolber {
-    use \BFBase\Singleton;
+class HeaderToolbar {
+    use \BF_PluginBase\Singleton;
 
     function activate_actions () {
         add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_scripts' ) );       

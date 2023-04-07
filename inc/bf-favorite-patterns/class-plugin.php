@@ -1,20 +1,20 @@
 <?php
 namespace BF_FavoritePatterns;
-class Plugin extends \BFBase\Plugin {
+class Plugin extends \BF_PluginBase\Plugin {
 
     protected $version = '0.0.1';
 
-    public \BFBase\View $view;
-    public \BFBase\Input $input;
+    public \BF_PluginBase\View $view;
+    public \BF_PluginBase\Input $input;
 
     public function initialize( $base_dir ) {
 
         parent::initialize( $base_dir );
         $block_dir = $this->base_dir . '/build';
         
-        $this->view = new \BFBase\View( $this );
+        $this->view = new \BF_PluginBase\View( $this );
 
-        $this->input = new \BFBase\Input();
+        $this->input = new \BF_PluginBase\Input();
        /* 
         $base_block = new SampleBlock($this, $block_dir . '/sample');
         $base_block->initialize();
@@ -28,7 +28,7 @@ class Plugin extends \BFBase\Plugin {
         $this->pattern_manager = FavoritePatternManager::get_instance();
         $this->pattern_manager->activate_actions();
 
-        $this->header_toolbar = HeaderToolber::get_instance();
+        $this->header_toolbar = HeaderToolbar::get_instance();
         $this->header_toolbar->activate_actions();
   
     }

@@ -1,7 +1,7 @@
 <?php
 
-namespace BFBase;
-class Plugin extends BaseObject {
+namespace BF_Plugin_Base;
+class Plugin extends Object {
     
     use Singleton;
 

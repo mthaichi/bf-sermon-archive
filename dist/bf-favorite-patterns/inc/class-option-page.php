@@ -1,6 +1,6 @@
 <?php
-namespace BF_FavoritePatterns;
-class OptionPage extends \BFBase\OptionPage {
+namespace BF_Favorite_Patterns;
+class OptionPage extends \BF_Plugin_Base\OptionPage {
 
     protected $page_title = 'BF Favorite Patterns';
     protected $menu_title = 'BF Favorite Patterns';

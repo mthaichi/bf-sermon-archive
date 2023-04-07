@@ -1,6 +1,6 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 /**
  * Singleton trait
  */

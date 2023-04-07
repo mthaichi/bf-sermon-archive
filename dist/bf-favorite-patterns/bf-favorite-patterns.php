@@ -52,6 +52,6 @@ require_once __DIR__ . '/inc/class-marquee-block.php';
 require_once __DIR__ . '/inc/class-option-page.php';
 require_once __DIR__ . '/inc/class-favorite-pattern-manager.php';
 
-$plugin = BF_FavoritePatterns\Plugin::get_instance();
+$plugin = BF_Favorite_Patterns\Plugin::get_instance();
 $plugin->initialize(__DIR__);
 

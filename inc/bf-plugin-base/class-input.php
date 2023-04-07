@@ -1,6 +1,6 @@
 <?php
 
-namespace BFBase;
+namespace BF_PluginBase;
 
 
 class Input extends BaseObject {

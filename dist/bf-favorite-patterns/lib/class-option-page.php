@@ -1,8 +1,8 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 
-class OptionPage extends BaseObject {
+class OptionPage extends Object {
 
     protected $page_title;
 

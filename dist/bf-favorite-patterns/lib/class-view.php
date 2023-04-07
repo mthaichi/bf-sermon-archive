@@ -1,10 +1,10 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 
 //use divengine;
 
-class View extends BaseObject {
+class View extends Object {
 
     protected $base_dir;
 

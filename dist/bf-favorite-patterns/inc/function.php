@@ -1,5 +1,5 @@
 <?php
-namespace BF_FavoritePatterns;
+namespace BF_Favorite_Patterns;
 
 function get_option ( $key ) {
     $plugin = Plugin::get_instance();

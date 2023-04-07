@@ -1,8 +1,8 @@
 <?php
 
-namespace BFBase;
+namespace BF_Plugin_Base;
 
- class Block extends BaseObject {
+ class Block extends Object {
 
     protected $block_dir;
     protected $plugin;

@@ -1,6 +1,6 @@
 <?php
 
-namespace BFBase;
+namespace BF_PluginBase;
 
 //use divengine;
 
