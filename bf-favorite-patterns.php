@@ -37,10 +37,15 @@ define( 'BFFP_PATH', plugin_dir_path( __FILE__ ) );
 define( 'BFFP_URL', plugin_dir_url( __FILE__ ) );
 
 require_once 'autoload.php';
-
 require_once __DIR__ . '/inc/bf-favorite-patterns/functions.php';
 
 $plugin = BF_FavoritePatterns\Plugin::get_instance();
 $plugin->initialize(__DIR__);
 
 
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://member.breadfish.jp/wp-update-server/?action=get_metadata&slug=bf-favorite-patterns',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'bf-favorite-page'
+);
