@@ -4,8 +4,8 @@
  * Description:       BREADFISHで用意したパターンを読み込みます。
  * Requires at least: 6.1.1
  * Requires PHP:      7.4
- * Version:           0.1.2
- * Author:            The WordPress Contributors
+ * Version:           0.1.3
+ * Author:            BREADFISH
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       bf-favorite-patterns
