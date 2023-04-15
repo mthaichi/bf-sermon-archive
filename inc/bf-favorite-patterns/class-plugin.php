@@ -24,13 +24,6 @@ class Plugin extends \BF_PluginBase\Plugin {
 */
         $this->option_page = new OptionPage($this);
         $this->option_page->initialize();
-
-        $this->pattern_manager = FavoritePatternManager::get_instance();
-        $this->pattern_manager->activate_actions();
-
-        $this->header_toolbar = HeaderToolbar::get_instance();
-        $this->header_toolbar->activate_actions();
-  
     }
 }
 

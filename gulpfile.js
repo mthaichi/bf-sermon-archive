@@ -26,6 +26,6 @@ gulp.task('dist', function (done) {
 		base: './'
 	  }
 	)
-	files.pipe(gulp.dest("dist/bf-favorite-patterns"));
+	files.pipe(gulp.dest("dist/bf-plugin-base"));
 	done();
   });

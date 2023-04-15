@@ -1,6 +1,5 @@
 {
     "require": {
-        "divengine/div": "^5.1",
         "yahnis-elsts/plugin-update-checker": "^5.0"
     }
 }
