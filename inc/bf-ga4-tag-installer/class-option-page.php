@@ -1,11 +1,11 @@
 <?php
-namespace BF_PluginBase;
+namespace BF_Ga4TagInstaller;
 class OptionPage extends \BF_PluginBase\OptionPage {
 
-    protected $page_title = 'BF Plugin Base';
-    protected $menu_title = 'BF Plugin Base';
-    protected $slug = 'bF-plugin-base';
-    protected $setting_group_name = 'bf_plugin_base_settings';
+    protected $page_title = 'BF GA4 Tag Installer';
+    protected $menu_title = 'BF GA4 Tag Installer';
+    protected $slug = 'bf-ga4-tag-installer';
+    protected $setting_group_name = 'bf_ga4_tag_installer_settings';
 
     /**
      * default option
@@ -13,7 +13,7 @@ class OptionPage extends \BF_PluginBase\OptionPage {
      * @var array
      */
     protected $options = array(
-//        array('bf_plugin_base_settings_api_url', 'https://member.breadfish.jp/wp-json/vk-patterns/v1/status'),
+        array('bfga4_tagm_measurement_id', ''),
     );
     protected $view = 'option-page.php';
 

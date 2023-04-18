@@ -1,5 +1,5 @@
 <?php
-namespace BF_FavoritePatterns;
+namespace BF_Ga4TagInstaller;
 class Plugin extends \BF_PluginBase\Plugin {
 
     protected $version = '0.0.1';
@@ -15,15 +15,12 @@ class Plugin extends \BF_PluginBase\Plugin {
         $this->view = new \BF_PluginBase\View( $this );
 
         $this->input = new \BF_PluginBase\Input();
-       /* 
-        $base_block = new SampleBlock($this, $block_dir . '/sample');
-        $base_block->initialize();
-
-        $marquee_block = new MarqueeBlock($this, $block_dir . '/marquee');
-        $marquee_block->initialize();
-*/
+  
         $this->option_page = new OptionPage($this);
         $this->option_page->initialize();
+
+        $this->ga4_tag_output = new Ga4TagOutput($this);
+        $this->ga4_tag_output->activate_action();
     }
 }
 

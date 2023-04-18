@@ -1,5 +1,5 @@
 <?php
-namespace BF_FavoritePatterns;
+namespace BF_Ga4TagInstaller;
 
 function get_option ( $key ) {
     $plugin = Plugin::get_instance();

@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name:       BF plugin base
- * Description:       BREADFISHのプラグインボイラープレート
+ * Plugin Name:       BF GA4 Tag Installer
+ * Description:       The GA4 Tag Output Plugin outputs the Google Analytics 4 tracking tag for your website. Simply install and activate the plugin to start tracking your website's analytics data with GA4.
  * Requires at least: 6.1.1
  * Requires PHP:      7.4
- * Version:           0.0.1
+ * Version:           0.0.2
  * Author:            BREADFISH
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -33,14 +33,13 @@ include "vendor/autoload.php";
 require_once 'autoload.php';
 
 
-$plugin = BF_PluginBase\Plugin::get_instance();
+$plugin = BF_Ga4TagInstaller\Plugin::get_instance();
 $plugin->initialize(__DIR__);
 
-/*
+
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://member.breadfish.jp/wp-update-server/?action=get_metadata&slug=bf-favorite-patterns',
+	'https://member.breadfish.jp/wp-update-server/?action=get_metadata&slug=bf-ga4-tag-installer',
 	__FILE__, //Full path to the main plugin file or functions.php.
-	'bf-favorite-page'
+	'bf-ga4-tag-installer'
 );
-*/

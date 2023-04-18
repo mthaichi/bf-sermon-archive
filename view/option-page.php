@@ -4,8 +4,8 @@
 <?php do_settings_sections( $setting_group_name ); ?>
 <table>
 <tr>
-<th>API URL</th>
-<td><input type="url" name="bf_plugin_base_settings_api_url" value="<?php echo esc_attr( $get_option('bf_plugin_base_settings_api_url') ); ?>"  /></td>
+<th>GA4 Measurement ID</th>
+<td><input type="text" name="bfga4_tagm_measurement_id" value="<?php echo esc_attr( $get_option('bfga4_tagm_measurement_id') ); ?>"  /></td>
 </tr>
 </table>
 <?php submit_button(); ?>

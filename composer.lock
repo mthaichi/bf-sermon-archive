@@ -4,55 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de7e444df5f4fb0e0163fe247d26adeb",
+    "content-hash": "21ed67436f61c99d581a165ab3a8139c",
     "packages": [
-        {
-            "name": "divengine/div",
-            "version": "5.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/divengine/div.git",
-                "reference": "8f31e224d828b4ea459065ac49b53739bd0b5747"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/divengine/div/zipball/8f31e224d828b4ea459065ac49b53739bd0b5747",
-                "reference": "8f31e224d828b4ea459065ac49b53739bd0b5747",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "divengine\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Rafa Rodriguez",
-                    "email": "rafageist@hotmail.com",
-                    "homepage": "https://rafageist.github.io",
-                    "role": "Founder"
-                }
-            ],
-            "description": "Div PHP Template Engine",
-            "homepage": "https://divengine.com",
-            "keywords": [
-                "code generator",
-                "template engine"
-            ],
-            "support": {
-                "issues": "https://github.com/divengine/div/issues",
-                "source": "https://github.com/divengine/div/tree/master"
-            },
-            "time": "2020-02-12T03:12:09+00:00"
-        },
         {
             "name": "yahnis-elsts/plugin-update-checker",
             "version": "v5.0",

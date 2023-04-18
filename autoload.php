@@ -5,7 +5,7 @@ spl_autoload_register(function ($class) {
     // 名前空間に "_" がある場合は、"-" に変換してディレクトリ名にする
     $namespaceParts = explode('\\', $class);
     $transformedNamespaceParts = array_map(function ($part) {
-        $part = preg_replace("/([a-z])([A-Z])/", "$1-$2", $part);
+        $part = preg_replace("/([a-z0-9])([A-Z])/", "$1-$2", $part);
         return strtolower(str_replace('_', '-', $part));
     }, $namespaceParts);
 
